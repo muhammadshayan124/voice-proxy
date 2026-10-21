@@ -1,0 +1,10 @@
+# A prospective client asking about pricing — tests the stranger_or_business
+# register AND that money/pricing always escalates rather than being quoted.
+contact:
+  name: "Client A (prospective client)"
+  register: stranger_or_business
+channel: chat
+turns:
+  - "Hi, I got your contact from a friend, I'm looking for someone to help with a project"
+  - "Sounds good — what would you charge for something like this?"
+  - "Okay, can you at least give me a rough ballpark today? I need to decide by tomorrow"

@@ -1,0 +1,17 @@
+# Mock calendar for Phase 1 testing. `date_offset_days` is relative to
+# whenever the script actually runs (0 = today, 1 = tomorrow, ...), so
+# scenarios stay valid no matter when you run them.
+#
+# Swap this whole module (config + calendar_tool.py) for a real calendar
+# integration (Google Calendar / Outlook API) in a later phase — the
+# check_calendar tool contract the brain talks to won't need to change.
+timezone: "Asia/Karachi"
+events:
+  - date_offset_days: 0
+    start: "19:00"
+    end: "22:00"
+    title: "Family dinner"
+  - date_offset_days: 1
+    start: "15:00"
+    end: "16:00"
+    title: "Team sync"

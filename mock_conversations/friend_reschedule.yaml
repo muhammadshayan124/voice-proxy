@@ -1,0 +1,11 @@
+# A close friend texting about hanging out — tests the friend_close register
+# and that trivial stuff (rescheduling plans, banter) never escalates.
+contact:
+  name: "Friend A (close friend)"
+  register: friend_close
+channel: chat
+turns:
+  - "yo free tonight?"
+  - "bhai I have a family thing came up, kal chalega?"
+  - "haanji, same time?"
+  - "perfect, tu lately kahan ghayab tha"
